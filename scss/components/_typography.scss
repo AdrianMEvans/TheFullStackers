@@ -1,0 +1,99 @@
+@use '../custom' as *;
+
+.display-2 {
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+
+    &-intro {
+        display: inline-block;
+        font-weight: 700;
+        color: rgba($platinum, 1);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    &-description {
+        font-size: 1rem;
+        display: block;
+        color: rgba($platinum, 0.8);
+        margin-top: 1.2rem;
+        text-transform: none;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 2rem;
+            display: inline-block;
+        }
+    }
+}
+
+//HEEADING LINE FOR COMPANIES SECTIONS
+
+.heading-line::before {
+    content: "";
+    width: 10rem;
+    height: 0.2rem;
+    margin: 0 auto;
+    display: block;
+    background-color: $secondary;
+}
+
+// DISPLAY 3 STYLE
+.display-3 {
+    font-family: 'Poppins', sans-serif;
+    color: rgba($primary, 1);
+
+    &--title {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        display: inline-block;
+        background-image: linear-gradient(to right, $terra-cotta, $primary);;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+
+        @include media-breakpoint-up(lg) {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+// DISPLAY 3 STYLE
+.display-2 {
+    font-family: 'Poppins', sans-serif;
+    color: rgba($primary, 1);
+
+    &--title {
+        font-size: 2.5rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        display: inline-block;
+        background-image: linear-gradient(to right, $terra-cotta, $primary);;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+
+        @include media-breakpoint-up(lg) {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+// BORDER RIGHT HAND SIDE
+.border-right {
+    border-right: 0.1rem solid rgba($secondary, 1);
+    height: 100%;
+
+}
+
+// Gradient Bg
+.gradient {
+    background: linear-gradient(to right, rgba($raisin-black, 0.95), rgba($jet, 0.95));
+}
+
+.hashtags {
+    text-align: center;
+    color: rgba($jet, 0.5);
+}
